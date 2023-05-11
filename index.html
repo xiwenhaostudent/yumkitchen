@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YumKitchen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="image/6.PNG">
+</head>
+
+<body>
+  <!-- menu -->
+  <div class="container">
+    <header>
+      <h1>Menu</h1>
+      <div class="shopping">
+        <img src="image/shopping.svg" alt="">
+        <span class="quantity">0</span>
+      </div>
+    </header>
+    <div class="list"></div>
+  </div>
+  <!-- cart -->
+  <div class="cart">
+    <h1>Cart</h1>
+    <ul class="listCart"></ul>
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+    </div>
+  </div>
+  <!-- navigator -->
+  <div class="nav">
+    <div class="logo">
+      Yum<span>Kitchen</span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <!-- <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li> -->
+      <li><a href="#" onclick="openPopup('about-us-popup')">About Us</a></li>
+      <li><a href="#" onclick="openPopup('contact-us-popup')">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+    </ul>
+  </div>
+
+  <!-- About Us popup -->
+  <div class="popup" id="about-us-popup">
+    <div class="popup-content">
+      <h2>About Us</h2>
+      <p>At our restaurant, we take great pride in our culinary creations and are dedicated to using only the freshest
+        ingredients in our dishes. Our team of passionate food lovers is constantly experimenting with new flavors and
+        techniques to create innovative and delicious meals that our customers will love. Whether you're looking for a
+        quick lunch on the go or a relaxing dinner with friends and family, we have something on our menu for everyone.
+      </p>
+      <button class="close-btn" onclick="closePopup('about-us-popup')">Close</button>
+    </div>
+  </div>
+
+  <!-- Contact Us popup -->
+  <div class="popup" id="contact-us-popup">
+    <div class="popup-content">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, comments, or feedback for us, we would love to hear from you! Our team is always
+        happy to help, whether you need assistance with placing an order, have a special dietary request, or just want
+        to say hello. You can reach us by email at yumkitchen@example.com, by phone at (123) 456-7890, or by visiting
+        our restaurant in person. We look forward to hearing from you!</p>
+      <button class="close-btn" onclick="closePopup('contact-us-popup')">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
